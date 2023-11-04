@@ -72,7 +72,7 @@ def chatbot():
     Initiates a chatbot conversation, simulating a seller's interaction.
     The chat continues until the user opts to exit by typing 'exit'.
     """
-    print("Hello! I am a Chatbot trained to converse like a buyer. Type 'exit' to end the conversation.")
+    print("Hello! I am a Chatbot trained to converse like a seller. Type 'exit' to end the conversation.")
     while True:
         user_input = input("You: ")
         if user_input.lower() == "exit":
