@@ -1,22 +1,36 @@
-Sales Chatbot
-This project features a chatbot that simulates buyer responses in a sales conversation. Utilizing a vector space model for understanding the context and providing relevant answers, it leverages a dataset of seller and buyer interactions to mimic a human buyer.
+# Sales Chatbot
 
-Features
-Vector Space Model: Leverages TfidfVectorizer to understand the context of the conversation and find the most appropriate response.
-Cosine Similarity: Uses cosine similarity to match user input with the most similar question in the dataset and retrieves a corresponding buyer response.
-OpenAI Integration: Employs OpenAI's GPT-3.5 Turbo to generate responses that are conditioned on previously retrieved buyer responses.
-Prerequisites
-Python 3.6+
-pandas
-scikit-learn
-OpenAI GPT-3.5 Turbo (API access)
-langchain library
-Ensure you have the above prerequisites installed and an API key from OpenAI before proceeding.
+## Overview
+This repository contains two chatbot models designed for enhancing the sales process. The first is a straightforward chatbot utilizing OpenAI's GPT-3.5 Turbo for general conversation. The second is a specialized sales chatbot trained to simulate a seller in a conversation with a buyer using a dataset of sales interactions.
 
-Installation
+### Simple Chatbot
+The simple chatbot leverages OpenAI's GPT-3.5 Turbo model to engage in a broad range of discussions. It can be used to answer general queries and is not specifically tailored to sales conversations.
+
+### Sales Chatbot
+The sales chatbot, on the other hand, is specifically designed to assist sellers in dealing with customers. It uses a combination of `TfidfVectorizer` from the `scikit-learn` library to analyze conversation context and `cosine_similarity` to find the most appropriate sales-oriented response.
+
+## Prerequisites
+To run the chatbots, you'll need to have the following prerequisites installed:
+
+- Python 3.6 or higher
+- `pandas`
+- `scikit-learn`
+- `langchain`
+- OpenAI's GPT-3.5 Turbo (with API access)
+
+OPENAI_API_KEY: Your OpenAI API key for the model.
+
+## Installation
+
 Clone or download the repository to your local machine:
-Navigate to the cloned directory:
-Run the general_chatbot or sales_chatbot script!
-Follow the prompt and start interacting with your chatbot!
+Install the required Python packages
+Navigate to the cloned directory
+For the sales chatbot, ensure you have a dataset named sales_conversation_data.csv in the project directory with 'Buyer' and 'Seller' columns.
+Run the general_chatbot or sales_chatbot script:
+
+Interact with the chatbot as prompted.
 
 To exit the conversation, type exit.
+
+
+
