@@ -59,10 +59,9 @@ def chatbot():
                     AIMessage(content=buyer_response)]  # Simulated AI response based on retrieved data
 
         # Get the AI's generated response considering the context
-        ai_response = chat(messages)
+        chatbot_response = chat(messages)
 
-        print(f"Chatbot: {ai_response.content}")
+        print(f"Chatbot: {chatbot_response.content}")
 
 if __name__ == "__main__":
     chatbot()
-    #test
