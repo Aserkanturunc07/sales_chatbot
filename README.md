@@ -7,7 +7,7 @@ This repository contains two chatbot models designed for enhancing the sales pro
 The simple chatbot leverages OpenAI's GPT-3.5 Turbo model to engage in a broad range of discussions. It can be used to answer general queries and is not specifically tailored to sales conversations.
 
 ### Sales Chatbot
-The sales chatbot, on the other hand, is specifically designed to assist sellers in dealing with customers who are hesistant to buy a product. It uses a combination of `TfidfVectorizer` from the `scikit-learn` library to analyze conversation context and `cosine_similarity` to find the most appropriate sales-oriented response. Its recommended to use this chatbot to train sellers to respond effectively to a buyer who has doubts about buying a product. When using this chatbot imagine you are the sales person in the middle of a sales conversation, so start with something like "How interested are you in this product, what concerns do you have"
+The sales chatbot, on the other hand, is specifically designed to assist sellers in dealing with customers who are hesistant to buy a product. It uses a combination of `TfidfVectorizer` from the `scikit-learn` library to analyze conversation context and `cosine_similarity` to find the most appropriate sales-oriented response. Its recommended to use this chatbot to train sellers to respond effectively to a buyer who has doubts about buying a product. When using this chatbot imagine you are the buyer in the middle of a sales conversation, and are not sure about buying the product, so start with something like "'Why should I buy this product' or 'This product looks expensive'" and watch chatbot provide a persuasive response.
 
 ## Prerequisites
 To run the chatbots, you'll need to have the following prerequisites installed:
