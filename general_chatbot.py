@@ -11,7 +11,7 @@ from langchain.schema import (
 )
 
 # Placing your actual OpenAI API key here
-OPENAI_API_KEY = "your_api_key"
+OPENAI_API_KEY = "your-api-key"
 
 # Initializing the chat model with the OpenAI API key and preferred model settings
 chat = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.2, openai_api_key=OPENAI_API_KEY)
