@@ -62,7 +62,7 @@ class ResponseRetriever:
         return self.data.iloc[most_similar_index]['Seller']
 
 
-# Initialize the chat model with predefined parameters.
+# Initializing the chat model with predefined parameters.
 chat = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.2, openai_api_key=OPENAI_API_KEY, max_tokens=200)
 response_retriever = ResponseRetriever(pd.read_csv("sales_conversation_data.csv"))
 
