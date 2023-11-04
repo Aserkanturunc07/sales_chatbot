@@ -42,7 +42,7 @@ response_retriever = ResponseRetriever(df)
 
 def chatbot():
     print("Hello! I am a Chatbot trained to respond like a buyer. Type 'exit' to end the conversation.")
-
+    print(1)
     while True:
         user_input = input("You: ")
         if user_input.lower() == "exit":
