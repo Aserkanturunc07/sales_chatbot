@@ -14,37 +14,9 @@ langchain library
 Ensure you have the above prerequisites installed and an API key from OpenAI before proceeding.
 
 Installation
-Clone the repository to your local machine:
-bash
-Copy code
-git clone https://github.com/your-username/sales-chatbot.git
+Clone or download the repository to your local machine:
 Navigate to the cloned directory:
-bash
-Copy code
-cd sales-chatbot
-Install the required packages:
-Copy code
-pip install -r requirements.txt
-Usage
-Place your sales interaction dataset named sales_training_data.csv in the project directory. Ensure it has columns labeled 'Seller Question' and 'Buyer Response'.
-
-Run the chatbot script:
-
-Copy code
-python chatbot.py
+Run the general_chatbot or sales_chatbot script!
 Follow the prompt and start interacting with your chatbot!
 
 To exit the conversation, type exit.
-
-Configuration
-To configure the chatbot settings, edit the following parameters in chatbot.py:
-
-OPENAI_API_KEY: Set this to your OpenAI API key.
-max_tokens: Adjust this to limit the length of the chatbot's responses.
-Contribution
-Contributions to this project are welcome. Please fork the repository and submit a pull request with your improvements.
-
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-Remember to replace https://github.com/your-username/sales-chatbot.git with the actual URL of your GitHub repository and add a LICENSE.md if you choose to include licensing. Additionally, ensure any other configuration or usage details specific to your project are updated accordingly in the README.
